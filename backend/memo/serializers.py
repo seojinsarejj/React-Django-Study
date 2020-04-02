@@ -3,7 +3,7 @@ from .models import Memo
 
 class MemoSerializer(serializers.ModelSerializer):
     class Meta:
-        field = (
+        fields = (
             'id',
             'title',
             'content',

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'memo',
     'rest_framework',
+    'corsheaders',
 ]
 
 REST_FRAMEWORK = {
