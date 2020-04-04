@@ -12,6 +12,7 @@ class App extends Component {
       this.setState({
         memos
       });
+      console.log(memos.id);
     }catch (e) {
       console.log(e)
     }
