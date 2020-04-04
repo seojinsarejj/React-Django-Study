@@ -1,4 +1,5 @@
 import React,{ Component } from 'react';
+import Template from './components/Template'
 
 class App extends Component {
   state = {
@@ -20,15 +21,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        {this.state.memos.map(item => (
-
-          <div key={item.id}>
-            <h1>{item.title}</h1>
-            <sqan>{item.content}</sqan>
-          </div>
-        ))}
-        </div>
+      <Template/>  
     );
   }
 
