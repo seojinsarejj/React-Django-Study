@@ -6,7 +6,7 @@ class List extends Component {
 
   render() {
     
-    const { memos, onItemClick } = this.props;
+    const { memos,nowid, onItemClick } = this.props;
     
       return (
         <main className="menu">
@@ -17,6 +17,7 @@ class List extends Component {
                     return (
                         <Item
                             id={id}
+                            nowid={nowid}
                             title={title}
                             onClick={() => onItemClick(id)}
                             />

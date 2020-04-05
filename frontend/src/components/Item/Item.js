@@ -6,9 +6,9 @@ class Item extends Component {
 
   render() {
     
-    const { id,title,onClick } = this.props;
+    const { id,nowid,title,onClick } = this.props;
     return (
-        <div onClick={onClick} className = "item">
+        <div onClick={onClick} className = { nowid==id ? "nowitem":"item"}>
             {title}
         </div>
     )    
