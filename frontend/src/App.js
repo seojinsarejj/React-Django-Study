@@ -29,7 +29,9 @@ class App extends Component {
 
       <div>
       <Template/>
-      <List/>  
+      <List>
+        
+      </List>  
       </div>    
   
     );
