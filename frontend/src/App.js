@@ -28,12 +28,16 @@ class App extends Component {
   }
 
 
+  handleHeaderClick =() => {
+    this.setState({nowid:null})
+  }
+
 
   render() {
     return (
 
       <div>
-      <Template/>
+      <Template onClick = {this.handleHeaderClick}/>
       <List 
         memos = {this.state.memos}
         nowid={this.state.nowid}

@@ -8,7 +8,7 @@ class Item extends Component {
     
     const { id,nowid,title,onClick } = this.props;
     return (
-        <div onClick={onClick} className = { nowid==id ? "nowitem":"item"}>
+        <div onClick={onClick} className = { nowid===id ? "nowitem":"item"}>
             {title}
         </div>
     )    
