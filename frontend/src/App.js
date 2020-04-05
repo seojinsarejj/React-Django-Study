@@ -1,14 +1,15 @@
 import React,{ Component } from 'react';
 import Template from './components/Template/Template'
 import List from './components/List/List'
-import axios from 'axios';
+import Contents from './components/Contents/Contents'
 
 class App extends Component {
 
 
   state = {
     memos : [],
-    nowid : null,
+    nowid : 1,
+    
   };
 
   async componentDidMount() {
@@ -18,6 +19,7 @@ class App extends Component {
     this.setState({
         memos
     });
+    console.log(memos)
     }catch (e) {
     console.log(e)
     }   
@@ -25,24 +27,33 @@ class App extends Component {
 
   handleItemClick = (id) => {
     this.setState({nowid:id})
+    
   }
 
 
   handleHeaderClick =() => {
-    this.setState({nowid:null})
+    this.setState({nowid:1})
   }
 
 
+
+
   render() {
+
+    const {memos,nowid} = this.state;
+    
+
     return (
 
       <div>
       <Template onClick = {this.handleHeaderClick}/>
       <List 
-        memos = {this.state.memos}
-        nowid={this.state.nowid}
+        memos = {memos}
+        nowid={nowid}
         onItemClick = {this.handleItemClick}/>
+      <Contents memos= {memos} nowid = {nowid}/>
       </div>    
+      
     );
   }
 
