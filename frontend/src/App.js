@@ -1,5 +1,6 @@
 import React,{ Component } from 'react';
 import Template from './components/Template/Template'
+import List from './components/List/List'
 
 class App extends Component {
 
@@ -26,10 +27,10 @@ class App extends Component {
   render() {
     return (
 
-
+      <div>
       <Template/>
-        
-          
+      <List/>  
+      </div>    
   
     );
   }

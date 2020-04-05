@@ -1,0 +1,19 @@
+.menu {
+    float:left;
+    background:#01A9DB;
+    width:200px;
+    min-height: 700px;
+    text-align: center;
+}
+
+.listtitle {
+
+    font-size: 30px;
+    font-style: italic;
+    height: 50px;
+    margin-bottom: 20px;
+    background: #585858;
+
+}
+
+
